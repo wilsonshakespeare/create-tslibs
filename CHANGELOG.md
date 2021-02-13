@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.7] - 2021-02-13
+### Added:
+- chore: Update tslib .vscode/setting.json and README.md
 ## [0.1.6] - 2021-02-13
 ### Added:
 - chore: Add CHANGELOG.md to repo

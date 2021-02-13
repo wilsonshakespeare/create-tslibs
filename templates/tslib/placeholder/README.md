@@ -42,6 +42,8 @@ await __LIB__.sleep(100);
 
 # This Library is Generated From create-tslibs
 
+Can refer to [create-tslibs](https://www.npmjs.com/package/create-tslibs)
+
 ## To run development following will be recommended:
 
 Use [VS Code](https://code.visualstudio.com/download) as IDE:
