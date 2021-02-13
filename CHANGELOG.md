@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.10] - 2021-02-13
+### Changed:
+- chore: Change console.log to shell.echo
 ## [0.1.9] - 2021-02-13
 ### Changed:
 - chore: Add debug log (package-lock.json not showing)

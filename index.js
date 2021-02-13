@@ -156,8 +156,8 @@ async function run() {
   files.forEach((file) => {
     const path = `${appDirectory}/placeholder/${file}`;
     const hasFile = fs.pathExistsSync(path);
-    console.log(`${path}`);
-    console.log(`contain file: ${hasFile}`);
+    shell.echo(`${path}`);
+    shell.echo(`contain file: ${hasFile}`);
     if (hasFile){
       // const data = fs.readFileSync(`./placeholder/${optionValue}/${file}`, 'utf8');
       const data = fs.readFileSync(`${path}`, 'utf8');
@@ -167,13 +167,13 @@ async function run() {
                       .replace(/__DATE__/g, dateString);
 
       fs.writeFileSync(`${appDirectory}/${file}`, result, 'utf8');
-      console.log(`create file complete: ${path}`)
+      shell.echo(`create file complete: ${path}`)
     }
   });
 
   shell.cd(folderValue);
-  console.log('Removing placeholder files');
   shell.rm('-rf', 'placeholder');
+  shell.echo(`${folderValue} created`);
 
   shell.exit(0);
 }
