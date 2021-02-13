@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.12] - 2021-02-13
+### Changed:
+- test: Test if file naming was the issue
 ## [0.1.11] - 2021-02-13
 ### Changed:
 - chore: Add callback function to fs.copy

@@ -151,7 +151,7 @@ async function run() {
   //*/
 
   // 6.2 Replacing files with placeholder
-  const files = ['package.json', 'package-lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
+  const files = ['package.json', 'lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
 
   const author = getAuthorName();
 
@@ -173,9 +173,11 @@ async function run() {
                       .replace(/__DATE__/g, dateString);
 
       fs.writeFileSync(`${appDirectory}/${file}`, result, 'utf8');
-      shell.echo(`create file complete: ${path}`)
+      shell.echo(`create file complete: ${path}`);
     }
   });
+
+  fs.renameSync(`${appDirectory}/lock.json`, `${appDirectory}/package-lock.json`);
 
   shell.cd(folderValue);
   shell.rm('-rf', 'placeholder');
