@@ -1,4 +1,4 @@
-# create-tslib
+# create-tslibs
 
 One stop TypeScript libraries and applications boilerplate generator
 
@@ -13,7 +13,7 @@ Following are the boilerplate option that are available:
 replace the option as above to following command:
 
 ```shell
-npx create-tslib --option=tslib --folder=your-lib-name
+npx create-tslibs --option=tslib --folder=your-lib-name
 
 # --folder will be your application / library name
 ```

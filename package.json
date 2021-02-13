@@ -1,15 +1,15 @@
 {
-  "name": "create-tslib",
+  "name": "create-tslibs",
   "version": "0.1.0",
   "description": "One stop TypeScript libraries and applications boilerplate generator",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilsonshakespeare/create-tslib"
+    "url": "https://github.com/wilsonshakespeare/create-tslibs"
   },
   "scripts": {
     "test": "echo \"Warning: No Test specified, require to run individual boilerplate test later\"",
-    "create-tslib": "node index.js --option=tslib --folder=tslib-template",
+    "create-tslibs": "node index.js --option=tslib --folder=tslib-template",
     "create-express": "node index.js --option=express --folder=express-template"
   },
   "author": "Wilson Lim",
@@ -27,7 +27,7 @@
     "boilerplate"
   ],
   "bin": {
-    "create-tslib": "index.js"
+    "create-tslibs": "index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
