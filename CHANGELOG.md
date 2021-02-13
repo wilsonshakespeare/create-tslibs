@@ -11,11 +11,19 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.15] - 2021-02-13
+### Fixed:
+- fix: Remove dependency to package-lock.json
+
+Note: 
+fs.copySync unable to copy package-lock.json with intention to run `npm ci`
+Hence instead of copying package-lock.json run `npm install` instead
+
 ## [0.1.14] - 2021-02-13
-### Changed:
+### Fixed:
 - fix: Change to copySync to avoid incomplete copy
 ## [0.1.13] - 2021-02-13
-### Changed:
+### Fixed:
 - fix: Remove callback function
 ## [0.1.12] - 2021-02-13
 ### Changed:

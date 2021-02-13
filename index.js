@@ -143,7 +143,7 @@ async function run() {
   );
 
   // 6.2 Replacing files with placeholder
-  const files = ['package.json', 'package-lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
+  const files = ['package.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
 
   const author = getAuthorName();
 
@@ -171,6 +171,7 @@ async function run() {
 
   shell.cd(folderValue);
   shell.rm('-rf', 'placeholder');
+  shell.exec('npm install');
   shell.echo(`${folderValue} created`);
 
   shell.exit(0);
