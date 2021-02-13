@@ -205,3 +205,12 @@ For vanilla CSS, you can include it at the root directory and add it to the `fil
 ## Publishing to NPM
 
 Recommend using [np](https://github.com/sindresorhus/np).
+
+Important Note:
+run `npm publish` for initial publish before running `np` commands
+You may run into the following issue:
+
+```shell
+npm access 2fa-required create-tslibs
+npm ERR! code E400
+```

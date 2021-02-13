@@ -52,4 +52,13 @@ Optional but Recommended:
 
 Recommend using [np](https://github.com/sindresorhus/np).
 
+Important Note:
+run `npm publish` for initial publish before running `np` commands
+You may run into the following issue:
+
+```shell
+npm access 2fa-required create-tslibs
+npm ERR! code E400
+```
+
 ### Happy Coding
