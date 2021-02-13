@@ -15,6 +15,23 @@ npm install __LIB__
 npm install __LIB__@0.1.1
 ```
 
+## Usage
+
+This library has both flow and ts declarations
+
+### For compiled library:
+
+```javascript
+import __LIB__ from '__LIB__';
+
+// for promise module and functions
+const { sleep } = __LIB__.promise;
+
+// If index module getting too big for the size you can import specific module
+import promise from '__LIB__/dist/promise';
+
+```
+
 ### Important for pure ES6
 
 ```javascript
@@ -22,6 +39,7 @@ npm install __LIB__@0.1.1
 // For import in typescript or flow, this is not required
 
 const __LIB__ = require('__LIB__').default;
+const promise = require('__LIB__/dist/promise').default;
 ```
 
 ## Library Functions:

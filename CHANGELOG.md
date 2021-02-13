@@ -11,6 +11,10 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.8] - 2021-02-13
+### Changed:
+- chore: Add Usage section to tslib README.md
+
 ## [0.1.7] - 2021-02-13
 ### Changed:
 - chore: Update tslib .vscode/setting.json and README.md
