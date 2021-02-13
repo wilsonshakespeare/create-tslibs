@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 And for each point, add semantics:
 https://seesparkbox.com/foundry/semantic_commit_messages
 
+For each keypoint, treat like commit messages, follow [Chris Beams' rules](https://chris.beams.io/posts/git-commit/)
+
 ## [Unreleased]
 
 ## [0.1.0] - __DATE__
