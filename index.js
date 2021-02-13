@@ -140,6 +140,12 @@ async function run() {
     appDirectory,
     {
       overwrite: true,
+    },
+    (err) => {
+      if (err) {
+        shell.error(err);
+        return;
+      }
     }
   );
   //*/

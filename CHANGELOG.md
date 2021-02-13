@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.11] - 2021-02-13
+### Changed:
+- chore: Add callback function to fs.copy
 ## [0.1.10] - 2021-02-13
 ### Changed:
 - chore: Change console.log to shell.echo
