@@ -134,7 +134,7 @@ async function run() {
   shell.mkdir(folderValue);
 
   // 6.1 Copy base code
-  await fs.copy(
+  fs.copySync(
     path.resolve(__dirname, `./templates/${optionValue}`),
     appDirectory,
     {
@@ -143,7 +143,7 @@ async function run() {
   );
 
   // 6.2 Replacing files with placeholder
-  const files = ['package.json', 'lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
+  const files = ['package.json', 'package-lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
 
   const author = getAuthorName();
 
@@ -168,8 +168,6 @@ async function run() {
       shell.echo(`create file complete: ${path}`);
     }
   });
-
-  fs.renameSync(`${appDirectory}/lock.json`, `${appDirectory}/package-lock.json`);
 
   shell.cd(folderValue);
   shell.rm('-rf', 'placeholder');

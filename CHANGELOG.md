@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.1.14] - 2021-02-13
+### Changed:
+- fix: Change to copySync to avoid incomplete copy
 ## [0.1.13] - 2021-02-13
 ### Changed:
 - fix: Remove callback function
