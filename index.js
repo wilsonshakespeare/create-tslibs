@@ -134,21 +134,13 @@ async function run() {
   shell.mkdir(folderValue);
 
   // 6.1 Copy base code
-  //*/
   await fs.copy(
     path.resolve(__dirname, `./templates/${optionValue}`),
     appDirectory,
     {
       overwrite: true,
-    },
-    (err) => {
-      if (err) {
-        shell.error(err);
-        return;
-      }
     }
   );
-  //*/
 
   // 6.2 Replacing files with placeholder
   const files = ['package.json', 'lock.json', 'LICENSE', 'CHANGELOG.md', 'README.md'];
