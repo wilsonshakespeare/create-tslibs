@@ -1,0 +1,35 @@
+{
+  "name": "create-tslib",
+  "version": "0.1.0",
+  "description": "One stop TypeScript libraries and applications boilerplate generator",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilsonshakespeare/create-tslib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-tslib": "node index.js --option=tslib --folder=tslib-template",
+    "create-express": "node index.js --option=express --folder=express-template"
+  },
+  "author": "Wilson Lim",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs-extra": "^9.1.0",
+    "shelljs": "^0.8.3",
+    "utilzed": "^0.2.3",
+    "valid-filename": "^3.1.0"
+  },
+  "keywords": [
+    "tslib",
+    "typescript",
+    "boilerplate"
+  ],
+  "bin": {
+    "create-tslib": "index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

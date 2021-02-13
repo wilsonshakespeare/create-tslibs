@@ -1,0 +1,14 @@
+{
+  "tslint.configFile": "./tslint.json",
+  "importBeautify.semicolon": true,
+  "importBeautify.maxLineLength": 80,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.format.enable": false,
+  "editor.tabSize": 2,
+  "prettier.singleQuote": true,
+  "editor.formatOnPaste": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
