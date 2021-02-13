@@ -1,6 +1,6 @@
 {
   "name": "create-tslibs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "One stop TypeScript libraries and applications boilerplate generator",
   "main": "index.js",
   "repository": {
