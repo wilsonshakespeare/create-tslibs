@@ -154,15 +154,20 @@ async function run() {
   const dateString = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
   
   files.forEach((file) => {
-    if (fs.pathExistsSync(`${appDirectory}/placeholder/${file}`)){
+    const path = `${appDirectory}/placeholder/${file}`;
+    const hasFile = fs.pathExistsSync(path);
+    console.log(`${path}`);
+    console.log(`contain file: ${hasFile}`);
+    if (hasFile){
       // const data = fs.readFileSync(`./placeholder/${optionValue}/${file}`, 'utf8');
-      const data = fs.readFileSync(`${appDirectory}/placeholder/${file}`, 'utf8');
+      const data = fs.readFileSync(`${path}`, 'utf8');
       var result = data.replace(/__LIB__/g, folderValue)
                       .replace(/__AUTHOR__/g, author)
                       .replace(/__YEAR__/g, date.getFullYear())
                       .replace(/__DATE__/g, dateString);
 
       fs.writeFileSync(`${appDirectory}/${file}`, result, 'utf8');
+      console.log(`create file complete: ${path}`)
     }
   });
 
