@@ -8,7 +8,7 @@
     "url": "https://github.com/wilsonshakespeare/create-tslib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Warning: No Test specified, require to run individual boilerplate test later\"",
     "create-tslib": "node index.js --option=tslib --folder=tslib-template",
     "create-express": "node index.js --option=express --folder=express-template"
   },
