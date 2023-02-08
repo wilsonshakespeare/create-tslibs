@@ -5,7 +5,6 @@ const shell = require('shelljs');
 const colors = require('colors');
 const isFilenameValid = require('valid-filename');
 const utilzed = require('utilzed').default;
-const test = require('utilzed/dist/promise').default;
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -21,7 +20,6 @@ function getAuthorName() {
     .exec('git config --global user.name', { silent: true })
     .stdout.trim();
   if (author) {
-    setAuthorName(author);
     return author;
   }
 
