@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Warning: No Test specified, require to run individual boilerplate test later\"",
     "create-tslibs": "node index.js --option=tslib --folder=tslib-template",
-    "create-express": "node index.js --option=express --folder=express-template"
+    "create-express": "node index.js --option=express --folder=express-template",
+    "publish:np": "bash ./publish.sh"
   },
   "author": "Wilson Lim",
   "license": "MIT",

@@ -10,7 +10,12 @@ https://seesparkbox.com/foundry/semantic_commit_messages
 For each keypoint, treat like commit messages, follow [Chris Beams' rules](https://chris.beams.io/posts/git-commit/)
 
 ## [Unreleased]
+- chore: Upgrade outdated packages for boilerplate
 
+## [0.1.17] - 2023-02-08
+- feat: Upgrade using pnpm instead of npm
+## [0.1.16] - 2023-02-08
+- fix: Remove deprecated references (setAuthorName and unused package)
 ## [0.1.15] - 2021-02-13
 ### Fixed:
 - fix: Remove dependency to package-lock.json
