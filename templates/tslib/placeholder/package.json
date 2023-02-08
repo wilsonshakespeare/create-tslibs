@@ -12,13 +12,12 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "bash ./build.sh",
     "test": "tsdx test",
     "lint": "eslint ./src ./test --ext .js,.ts",
     "lint-fix": "eslint ./src ./test --ext .js,.ts --fix",
-    "prepare": "bash ./build.sh",
     "size": "size-limit",
     "analyze": "size-limit --why",
+    "build": "bash ./build.sh",
     "publish:np": "bash ./publish.sh"
   },
   "husky": {

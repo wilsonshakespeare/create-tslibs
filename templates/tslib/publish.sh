@@ -1,3 +1,3 @@
 echo "Initiate Publish"
-pnpm i
+sh ./build.sh
 np
