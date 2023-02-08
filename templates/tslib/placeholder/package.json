@@ -18,7 +18,8 @@
     "lint-fix": "eslint ./src ./test --ext .js,.ts --fix",
     "prepare": "bash ./build.sh",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "publish:np": "bash ./publish.sh"
   },
   "husky": {
     "hooks": {

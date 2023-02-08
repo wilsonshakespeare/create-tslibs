@@ -169,8 +169,17 @@ async function run() {
 
   shell.cd(folderValue);
   shell.rm('-rf', 'placeholder');
-  shell.exec('npm install');
-  shell.echo(`${folderValue} created`);
+
+  if (!shell.which('pnpm')) {
+    shell.exec('npm install -g pnpm')
+  }
+
+  if (!shell.which('np')) {
+    shell.exec('npm install -g np')
+  }
+
+  shell.exec('pnpm i');
+  shell.echo(`${folderValue} library setup`);
 
   shell.exit(0);
 }

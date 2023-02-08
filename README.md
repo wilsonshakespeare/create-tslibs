@@ -2,6 +2,7 @@
 
 One stop TypeScript libraries and applications boilerplate generator
 
+IMPORTANT: this script will automatically install `pnpm` and `np` globally
 ## Quick Start
 
 Following are the boilerplate option that are available:
@@ -17,6 +18,10 @@ npx create-tslibs --option=tslib --folder=your-lib-name
 
 # --folder will be your application / library name
 ```
+
+## PNPM
+
+Instead of using npm, we will be using pnpm, publishing to npm for your packages will be using np, since np is not supported for pnpm hence publish.sh will ensure `pnpm i` run before `np` running
 
 ## tslib
 
